@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+
+  root 'speaker#index'
+
+  get 'speaker/index' => 'speakers#index'
+
+  get 'speaker/show' => 'speakers#show'
+
+  get 'speaker/create'
+
+  get 'speaker/update'
+
+  get 'speaker/delete'
+
+  get 'speaker/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
